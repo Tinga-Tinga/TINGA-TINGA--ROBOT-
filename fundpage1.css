@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.header {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.robot-logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #7a7a7a;
+}
+
+.fund-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.fund-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 768px) {
+    .form-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.6rem;
+    }
+
+    form input {
+        font-size: 0.9rem;
+    }
+
+    .fund-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.4rem;
+    }
+
+    form input {
+        font-size: 0.8rem;
+    }
+
+    .fund-btn {
+        font-size: 0.9rem;
+    }
+}

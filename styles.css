@@ -1,0 +1,140 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container for overall content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.text-center {
+    text-align: center;
+}
+
+.main-title {
+    color: rgb(28, 216, 28);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.2;
+    width: 100%;
+}
+
+
+.highlight {
+    color: rgb(28, 216, 28);
+}
+
+
+.robot-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+.powered-by {
+    color: #333;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1dd421;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 200px; 
+}
+
+.btn:hover {
+    background-color: #138a19;
+}
+
+
+.tinga-footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-container p {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+   
+    .main-title {
+        font-size: 2rem; 
+        margin-top: 15px;
+    }
+
+    .robot-image {
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    /
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    
+    .footer-container {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-title {
+        font-size: 3.5rem; 
+
+    .robot-image {
+        max-width: 400px;
+    }
+
+    .footer-container {
+        font-size: 1.2rem;
+    }
+}
